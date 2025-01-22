@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="courses.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="hader">
+        <div class="head">
+        
+            <img src="img/image 3.svg" alt="">
+            <p>Shobha Patil Mam</p>
+            <button class="profile" id="profileButton" type="submit"> 
+              
+                <div class="drop" id="dropMenu">
+                    <a href="#" id="settings">Settings</a>
+                    <a href="#" id="logout">Logout</a>
+                </div>
+
+            <img src="image 4.png" alt="">
+            </button>
+
+            <button class="settings" ><i class="fa-solid fa-gear"></i></button>
+              
+      
+        </div> 
+    </div>
+
+
+    <div class="title">
+      <h5>Courses >> Computer Organization & Microprocessors-TH</h5>
+       <!-- <button id="addCOButton">+ &nbsp;ADD CO</button> -->
+
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+         + Add co
+        </button> 
+  
+  </div>
+
+  <div class="conat" id="container">
+       
+   <h3>Program Outcome</h3>
+
+   <div class="conat-ch">
+      <h4><a href="PO1.html"> PO1: Engineering knowledge </a> </h4>
+   </div>
+
+   <div class="conat-ch">
+       <h4><a href=""> PO 2: Problem analysis </a> </h4>
+    </div>
+
+    <div class="conat-ch">
+       <h4><a href=""> PO 3: Design/development of solutions</a> </h4>
+    </div>
+
+    <div class="conat-ch">
+       <h4><a href=""> PO 4: Conduct investigations of complex problems </a> </h4>
+    </div>
+
+    <div class="conat-ch">
+       <h4><a href=""> PO 5: Modern tool usage </a> </h4>
+    </div>
+
+    <div class="conat-ch">
+       <h4><a href="">PO 6: The engineer and society </a> </h4>
+    </div>
+
+    <div class="conat-ch">
+       <h4><a href="">PO 7: Environment and sustainability</a> </h4>
+    </div>
+
+    <div class="conat-ch">
+       <h4><a href=""> PO 8: Ethics </a> </h4>
+    </div>
+
+    <div class="conat-ch">
+       <h4><a href=""> PO9: Engineering knowledge </a> </h4>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 class="modal-title fs-5" id="exampleModalLabel">Add Course Outcome</h1>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <input type="text" id="courseInput" placeholder="Enter course outcome" class="form-control">
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-primary" id="submitCourseOutcome">Submit</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js">
+     
+    </script>
+
+</body>
+</html>

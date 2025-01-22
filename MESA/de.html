@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On-Screen Modal Prompt</title>
+  <style>
+    /* Modal styling */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; 
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 40%; /* Could be more or less, depending on screen size */
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Dropdown -->
+<select id="selectOption" onchange="showModal()">
+  <option value="" disabled selected>1.1: Demonstrate competence in mathematical modelling</option>
+  <option value="1">1.1.1: Apply mathematical techniques</option>
+  <option value="2">1.1.2: Apply advanced techniques</option>
+</select>
+
+<!-- The Modal -->
+<div id="promptModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p id="promptMessage"></p>
+    <input type="text" id="userInput" placeholder="Enter your response here">
+    <br><br>
+    <button onclick="submitModal()">Submit</button>
+  </div>
+</div>
+
+<script>
+function showModal() {
+  const selectedValue = document.getElementById("selectOption").value;
+  const modal = document.getElementById("promptModal");
+  const promptMessage = document.getElementById("promptMessage");
+
+  // Update the modal message based on the selection
+  if (selectedValue === "1") {
+    promptMessage.textContent = "You selected 1.1.1 - Please enter your response:";
+  } else if (selectedValue === "2") {
+    promptMessage.textContent = "You selected 1.1.2 - Please enter your response:";
+  }
+
+  // Show the modal
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  const modal = document.getElementById("promptModal");
+  modal.style.display = "none";
+}
+
+function submitModal() {
+  const userInput = document.getElementById("userInput").value;
+  alert("You submitted: " + userInput);
+
+  // Close the modal after submitting
+  closeModal();
+}
+
+// Close the modal if the user clicks outside the modal content
+window.onclick = function(event) {
+  const modal = document.getElementById("promptModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

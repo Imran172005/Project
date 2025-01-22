@@ -1,0 +1,77 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#Userdetails{
+    width: 50%;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#head h1{
+    width: 290px;
+    
+    margin-left: 231px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+}
+
+#head  p{
+    width: 413.97px;
+    margin-left: 199px;
+    margin-bottom: 10px;
+}
+
+
+.details{
+    text-align: left;
+    margin-left: 241px;
+}
+input{
+    width: 318.42px;
+    height:41.31px;
+    border-radius: 12px;
+    color: #636364;
+}
+
+.remember .checkbox
+{
+    width: 15px;
+    height: 15px;
+    border-radius:5px;
+    margin-top: 24px;
+}
+.remember{
+    display: flex;
+    gap: 10px;
+    margin-left: 251px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 80px;
+ 
+}
+
+.Sign{
+    width: 313.97px;
+    height: 41.31px;
+    border-radius: 12px;
+    background-color: #095899;
+    color: #fff;
+    margin-left: 75px;
+    border: none;
+}
+
+img{
+    width: 840px;
+     height: 775px;
+}
+.page{
+    display: flex;
+}

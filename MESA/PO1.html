@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="courses.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        /* Modal styling */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; 
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+        }
+    
+        .modal-content {
+          background-color: white;
+          margin: 15% auto; /* 15% from the top and centered */
+          padding: 20px;
+          border: 1px solid #888;
+          width: 40%; /* Could be more or less, depending on screen size */
+        }
+
+        
+    
+        .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+    
+        .close:hover,
+        .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+
+        .modal-content table select{
+            width: 83px;
+            border: 1px#B4B4B4;
+            /* height: 21px;
+            border-radius: 5px;
+            border: 1px #B4B4B4; */
+            
+        }
+
+        .modal-content .done{
+            background-color: #09995D;
+            width: 90px;
+            height: 34px;
+            border-radius: 8px;
+            color: #fff;
+            border: none;
+            
+        }
+      </style>
+
+</head>
+<body>
+    <div class="hader">
+        <div class="head">
+        
+            <img src="img/image 3.svg" alt="">
+            <p>Shobha Patil Mam</p>
+            <button class="profile" id="profileButton" type="submit"> 
+              
+                <div class="drop" id="dropMenu">
+                    <a href="#" id="settings">Settings</a>
+                    <a href="#" id="logout">Logout</a>
+                </div>
+
+            <img src="image 4.png" alt="">
+            </button>
+
+            <button class="settings" ><i class="fa-solid fa-gear"></i></button>
+              
+      
+        </div> 
+    </div>
+
+ <div></div>
+    <div class="title">
+      <h5>Courses >> Computer Organization & Microprocessors-TH  >> PO 1:  Engineering knowldge</h5>
+       <!-- <button id="addCOButton">+ &nbsp;ADD CO</button> -->
+ 
+  
+  </div>
+
+  <div class="PO1">
+   <div class="PO1-conat">
+      <h5>Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution <br>of complex</h5>
+   </div>
+   </div>
+
+
+   <div class="PO1-text">
+    <h4>Competancy : </h4>
+   </div>
+
+
+   <div class="select">
+
+    <select id="selectOption" onchange="showModal()">
+        <option value="" disabled selected>1.1: Demonstrate competence in mathematical modelling</option>
+        <option value="1">1.1.1: Apply mathematical techniques such as calculus, linear algebra, and statistics to solve problems</option>
+        <option value="2">1.1.2: Apply advanced mathematical techniques to model and solve mechanical engineering problems</option>
+        
+      </select>
+
+   </div>
+
+   <div class="select">
+    <select id="selectOption" onchange="showModal()">
+        <option value="" disabled selected>1.2: Demonstrate competence in basic sciences</option>
+        <option value="1">1.1.1: Apply mathematical techniques such as calculus, linear algebra, and statistics to solve problems</option>
+        <option value="2">1.1.2: Apply advanced mathematical techniques to model and solve mechanical engineering problems</option>
+        
+      </select>
+
+   </div>
+
+   <div class="select">
+    <select id="selectOption" onchange="showModal()">
+        <option value="" disabled selected>1.3: Demonstrate competence in engineering fundamentals  </option>
+        <option value="1">1.1.1: Apply mathematical techniques such as calculus, linear algebra, and statistics to solve problems</option>
+        <option value="2">1.1.2: Apply advanced mathematical techniques to model and solve mechanical engineering problems</option>
+        
+      </select>
+
+   </div>
+
+
+   <div class="select" id="selectOption" onchange="showModal()">
+    <select>
+        <option value="" disabled selected>1.4:Demonstrate competence in specialized engineering knowledge to the program   </option>
+        <option value="1">1.1.1: Apply mathematical techniques such as calculus, linear algebra, and statistics to solve problems</option>
+        <option value="2">1.1.2: Apply advanced mathematical techniques to model and solve mechanical engineering problems</option>
+        
+      </select>
+
+   </div>
+
+
+   <!-- The Modal -->
+<div id="promptModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="promptMessage"></p>
+
+         <table>
+            <tr>
+                <th>CO 1</th>
+                <th>CO 2</th>
+                <th>CO 3</th>
+                <th>CO 4</th>
+            </tr>
+           <div class="yes-no">
+            <tr>
+                <th><select name="" id="">
+                    <option value="">YES</option>
+                    <option value="">NO</option>
+                </select></th>
+                <th><select name="" id="">
+                    <option value="">YES</option>
+                    <option value="">NO</option>
+                </select></th>
+                <th><select name="" id="">
+                    <option value="">YES</option>
+                    <option value="">NO</option>
+                </select></th>
+                <th><select name="" id=""> 
+                    <option value="">YES</option>
+                    <option value="">NO</option>
+                </select></th>
+            </tr>
+        </div>
+         </table>
+      <br><br>
+      <button class="done"   type="submit" onclick="submitModal()">Submit</button>
+    </div>
+  </div>
+ 
+    <script src="home.js"></script>
+    <script>function showModal() {
+        const selectedValue = document.getElementById("selectOption").value;
+        const modal = document.getElementById("promptModal");
+        const promptMessage = document.getElementById("promptMessage");
+      
+        // Update the modal message based on the selection
+        if (selectedValue === "1") {
+          promptMessage.textContent = "You selected 1.1.1 - Please enter your response:";
+        } else if (selectedValue === "2") {
+          promptMessage.textContent = "You selected 1.1.2 - Please enter your response:";
+        }
+      
+        // Show the modal
+        modal.style.display = "block";
+      }
+      
+      function closeModal() {
+        const modal = document.getElementById("promptModal");
+        modal.style.display = "none";
+      }
+      
+      function submitModal() {
+        const userInput = document.getElementById("userInput").value;
+        alert("You submitted: " + userInput);
+      
+        // Close the modal after submitting
+        closeModal();
+      }
+      
+      // Close the modal if the user clicks outside the modal content
+      window.onclick = function(event) {
+        const modal = document.getElementById("promptModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      }</script>
+
+</body>
+</html>

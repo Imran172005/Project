@@ -1,0 +1,286 @@
+body{
+    background-color: #F6F6F6;
+}
+.hader{
+   padding: 20px;
+   background-color: #095899;
+}
+
+.head{
+    color: #fff;
+    display: flex;
+    gap: 20px
+    ;
+    /* justify-content: space-between; */
+}
+
+.head p{
+    margin-left: 1146px;
+}
+
+.profile{
+    border-radius:80px;
+    width: 56px;
+    background: #095899;
+    border: none;
+   
+}
+
+#profileButton{
+     
+    width: 56px;
+    height: 15px;
+
+  
+}
+.drop {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 130px;
+}
+.drop a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.drop a:hover {
+    background-color: #095899;
+    color: #fff;
+}
+
+
+.settings{
+    background-color: #095899;
+    border: none;
+    color: #ffff;
+    font-size: 30px;
+}
+
+
+
+
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    color: #095899;
+    border: 1px solid #BEB4B4;
+    background-color:  #e5f2fc;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table{
+    padding: 60px 60px  0;
+     display: flex;
+    justify-content: center;
+}
+
+select {
+    width: 50%;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 10px;
+    border-radius: 10px;
+    border: 1px #BEB4B4;
+}
+
+
+h2{
+    font-weight:500;
+    font-size: 25px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/* Style for the course table */
+.coursestable {
+    padding: 20px 150px;
+    /* background-color: #f9f9f9;  /* Example background */
+} 
+
+.coursestable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table header */
+.coursestable th {
+    color: #095899;
+    background-color: #e5f2fc;
+    padding: 10px;
+    border: 1px solid #beb4b4;
+}
+
+/* Table rows */
+.coursestable td {
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #beb4b4;
+}
+
+/* Detail rows background change */
+.coursestable .detail {
+    background-color: #f0faff; /* Change this to the color you prefer */
+}
+
+/* Hover effect for rows */
+.coursestable tr:hover {
+    background-color: #fff;
+}
+
+
+.coursestable table td {
+    background-color: #fff !important; 
+} 
+
+.coursestable table td a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.title{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.title h5{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--bs-heading-color)
+}
+
+.title button{
+    width: 134px;
+    height: 34px;
+    margin-top: 2px;
+    background-color: #095899;
+    color: #fff;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 10px;
+    border: none;
+} 
+
+
+
+.conat{
+    margin: 0 60px;
+    width: 1402px;
+    height: 570px;
+    background-color: #e5f2fc ;
+    border-radius: 5px;
+    border: 1px;
+    padding: 10px;
+}
+
+.conat h3{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 17px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+.conat-ch{
+    width: 535px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+ 
+    
+}
+
+
+.conat-ch a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #095899;
+    margin-left: 20px;
+   
+}
+
+.modal-body input{
+    width: 460px;
+    height: 50px;
+}
+
+
+
+
+/* Po1 */
+.PO1{
+    padding: 0 329px;
+}
+.PO1-conat{
+   align-items: center;
+    width: 820px;
+    height: 68px;
+    background-color:#ffff;
+    border-radius: 5px;
+    border: 1px #B4B4B4;
+    
+    
+}
+.PO1-conat h5{
+padding: 15px;
+}
+
+.PO1-text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing:1px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.select{
+    padding: 10px 150px;
+}
+.select select{
+    width: 989px;
+    height: 46px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #095899; 
+    border-radius: 5px;
+    border: 1px #B4B4B4;
+}
+
+.select select option{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+
